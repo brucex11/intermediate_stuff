@@ -3,6 +3,12 @@
 
 # Development 
 
+## Debugger
+Run the debugger by pressing F5 key while the file of interest is "active".
+That is, to run the ./misques/raises.py code, open the file and press F5.
+
+The TERMINAL pane will open to display the output.
+
 ## Development Environments Using Pyenv and Virtualenv
 
 Create virtualenv and activate:
