@@ -3,7 +3,7 @@ def is_list():   # 'is' stands for intermediate-stuff
   list: ordered, mutable, allows duplicate elements
   """
   
-  # init a list with 5 elements all set to 0
+  print(f"init a list with 5 elements all set to 0 ---------------------------")
   zero_list = [0] * 5
   pass
 
@@ -13,7 +13,7 @@ def is_list():   # 'is' stands for intermediate-stuff
   one = a_list[1]
   pass
 
-  # create an empty list and append and pop
+  print(f"create an empty list and append and pop ----------------------------")
   mylist2 = list()   # list is empty
   # mylist2.append(8,9,11,13)  # syntax error
   mylist2.append(8)  # len = 1
@@ -27,28 +27,28 @@ def is_list():   # 'is' stands for intermediate-stuff
                                     # is NOW at index == 1
   pass
 
-  # iterate
-  # for elem in a_list:
-  #   print(f"elem: '{elem}'")
+  print(f"iterate ------------------------------------------------------------")
+  for elem in a_list:
+    print(f"elem: '{elem}'")
   
-  # check element in list
+  print(f"check/find element in list -----------------------------------------")
   if( 'text' in a_list ):
     print(f"YES")
   if( 1 in a_list ):
     print(f"YES")
 
-  # length of list
+  print(f"length of list -----------------------------------------------------")
   len_a_list = len(a_list)
   pass
 
-  # remove element
+  print(f"remove element -----------------------------------------------------")
   print(f"1. a_list: {a_list}")
   elem_item = a_list.remove( 2 )  # '2' IS in the list, but elem_item = None
   # print(f"elem_item: {elem_item}")  # elem_item = None
   print(f"2. a_list: {a_list}")
   pass
 
-  # reverse (in place)
+  print(f"reverse (in place) -------------------------------------------------")
   rev = a_list.reverse()  # rev = None, a_list is mutable therefore is reversed
   print(f"3. a_list: {a_list}")
   pass
@@ -56,16 +56,16 @@ def is_list():   # 'is' stands for intermediate-stuff
   a_list[::-1]
   print(f"4. a_list: {a_list}")
 
+  print(f"sort into new list -------------------------------------------------")
   sort_list = [4,3,1,-1,-5,10]
-  # sort into new list
   new_sort = sorted(sort_list)
   pass
-  # sort (in place)
+  print(f"sort (in place) ----------------------------------------------------")
   sort_list.sort()   # sort_list after sort(): [-5, -1, 1, 3, 4, 10]
   print(f"sort_list after sort(): {sort_list}")
   pass
 
-  # concatenate two lists with '+'
+  print(f"concatenate two lists with '+' -------------------------------------")
   ml1 = [0] * 5
   ml2 = [1] * 5
   ml3 = ml1 + ml2
@@ -75,7 +75,7 @@ def is_list():   # 'is' stands for intermediate-stuff
   #  ml3: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
   #  ml4: [1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
 
-  # slicing with ':'
+  print(f"slicing with ':' ---------------------------------------------------")
   slice_list = [0,1,2,3,4,5,6,7,8,9]
   b_list = slice_list[1:5]
   print(f"b_list: {b_list}")  # b_list: [1, 2, 3, 4]
@@ -84,14 +84,14 @@ def is_list():   # 'is' stands for intermediate-stuff
   b_list = slice_list[5:]
   print(f"b_list: {b_list}")  # b_list: [5, 6, 7, 8, 9]
 
-  # slice with step size
+  print(f"slice with step size -----------------------------------------------")
   step_list = slice_list[::1]  # step defaults to 1
   print(f"step_list: {step_list}")  # step_list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   step_list = slice_list[::2]  # get every-other
   print(f"step_list: {step_list}")  # step_list: [0, 2, 4, 6, 8]
 
-  # assignment: use '=' and both lists are referencing the same list
-  # therefore, use .copy() method for distinct lists
+  print(f"assignment: use '=' and both lists are referencing the same list ---")
+  print(f"therefore, use .copy() method for distinct list objects/instances. -")
   list_org = ['banana','cherry','apple']
   list_cpy = list_org
   print(f"list_org = list_cpy: {list_org} = {list_cpy}")
@@ -102,20 +102,26 @@ def is_list():   # 'is' stands for intermediate-stuff
   print(f"list_org: {list_org}")
   print(f"list_cpy: {list_cpy}")
 
-  # two more ways to make an actual copy
+  print(f"two more ways to make an actual copy -------------------------------")
   list_cpy2 = list_org[:]  # slice
   print(f"list_cpy2: {list_cpy2}")
   list_cpy3 = list(list_org)  # method with list as argument
   print(f"list_cpy3: {list_cpy3}")
   
-  # list comprehension: elegant and fast way to create a new list from
-  # an existing list
+  print(f"list comprehension: elegant and fast way to create a new list ------")
+  # from an existing list but is expensive per CPU cycle time, it is slow.
   zz = [1,2,3,4,5,6]
   print(f"zz: {zz}")
   yy = [i*i for i in zz]  # square each element
   print(f"yy = zz squared: {yy}")
   xx = [i*-1 for i in zz]  # inverse each element
   print(f"xx = inverse of zz: {xx}")
+
+  print(f"list comprehension -------------------------------------------------")
+  a_list = [1,2,3,4,5]
+  c = [x*2 for x in a_list]
+  print(a_list)
+  print(c)
 
 
 

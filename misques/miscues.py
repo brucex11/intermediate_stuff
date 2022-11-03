@@ -6,7 +6,7 @@ def is_misque():   # 'is' stands for intermediate-stuff
   
   """
 
-  # try/except template --------------------------------------------------------
+  print(f"try/except template ------------------------------------------------")
   try:
     pass
   except IndexError as e:
@@ -17,7 +17,7 @@ def is_misque():   # 'is' stands for intermediate-stuff
   finally:
     pass
 
-  # FileNotFoundError ----------------------------------------------------------
+  print(f"FileNotFoundError --------------------------------------------------")
   try:
     file = open('somefile.txt')
   except FileNotFoundError as e:
@@ -28,7 +28,7 @@ def is_misque():   # 'is' stands for intermediate-stuff
   finally:
     pass
 
-  # IndexError -----------------------------------------------------------------
+  print(f"IndexError ---------------------------------------------------------")
   t_list = ['Max', 32, 'New York']
   mytuple5 = tuple(t_list)
   # print(f"mytuple5: {mytuple5}")
@@ -45,7 +45,7 @@ def is_misque():   # 'is' stands for intermediate-stuff
   finally:
     pass
 
-  # KeyError -------------------------------------------------------------------
+  print(f"KeyError -----------------------------------------------------------")
   try:
     my_dict = {'name':'Max'}
     my_dict['age']
@@ -57,16 +57,16 @@ def is_misque():   # 'is' stands for intermediate-stuff
   finally:
     pass
 
-  # ModuleNotFoundError --------------------------------------------------------
-  # is a subclass of the ImportError
+  print(f"ModuleNotFoundError is a subclass of ImportError -------------------")
+  # 
 
-  # NameError ------------------------------------------------------------------
+  print(f"NameError ----------------------------------------------------------")
   try:
     a = bb
   except NameError as e:
     print(f"NameError: >>{e}<<")
 
-  # TypeError ------------------------------------------------------------------
+  print(f"TypeError ----------------------------------------------------------")
   try:
     a = 5 + '10'
   except TypeError as e:
@@ -76,7 +76,7 @@ def is_misque():   # 'is' stands for intermediate-stuff
   finally:
     pass
 
-  # ValueError -----------------------------------------------------------------
+  print(f"ValueError ---------------------------------------------------------")
   try:
     val = 4
     a = [1,2,3]
@@ -88,10 +88,6 @@ def is_misque():   # 'is' stands for intermediate-stuff
     pass
   finally:
     pass
-
-
-
-
 
 
 if( __name__ == '__main__' ):

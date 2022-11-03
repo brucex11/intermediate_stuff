@@ -6,7 +6,7 @@ def is_raise():   # 'is' stands for intermediate-stuff
   """
 
 
-  # AssertionError -------------------------------------------------------------
+  print(f"AssertionError -----------------------------------------------------")
   try:
     x = -5
     assert( x >= 0 ), "x is not positive, x = " + str(x)
@@ -18,7 +18,7 @@ def is_raise():   # 'is' stands for intermediate-stuff
   finally:
     pass
 
-  # raise with 'if' ------------------------------------------------------------
+  print(f"raise with 'if' ----------------------------------------------------")
   try:
     x = -5
     if x < 0:
