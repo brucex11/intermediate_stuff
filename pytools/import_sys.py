@@ -16,7 +16,6 @@ def is_sys_tools():   # 'is' stands for intermediate-stuff
   print(f"sys.getsizeof(my_tuple) bytes: {sys.getsizeof(my_tuple)}")
 
 
-
-
+#-------------------------------------------------------------------------------
 if( __name__ == '__main__' ):
   is_sys_tools()

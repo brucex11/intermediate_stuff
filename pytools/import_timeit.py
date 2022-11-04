@@ -16,5 +16,6 @@ def is_timeit_tools():   # 'is' stands for intermediate-stuff
   # tuple: 0.08090850000735372
 
 
+#-------------------------------------------------------------------------------
 if( __name__ == '__main__' ):
   is_timeit_tools()

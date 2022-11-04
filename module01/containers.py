@@ -9,6 +9,7 @@ def run_as_import():
   print(f'run as import __name__: {__name__}')
 
 
+#-------------------------------------------------------------------------------
 if( __name__ == '__main__' ):
   run_as_main()
 else:
