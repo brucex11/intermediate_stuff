@@ -109,6 +109,6 @@ def is_lambda_funcs():   # 'is' stands for intermediate-stuff
   print(f"product of all in list above: {product_a}")
 
 
-
+#-------------------------------------------------------------------------------
 if( __name__ == '__main__' ):
   is_lambda_funcs()
