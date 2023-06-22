@@ -1,5 +1,14 @@
 # Python Production Project Bootstrap
 
+# GitHub Access
+```
+  cd .ssh/
+  ssh-add id_ed25519_gh_be
+  Enter passphrase for id_ed25519_gh_be:
+  Identity added: id_ed25519_gh_be (bruce.electronix.com)
+  cd /d/SourceCode/GitLab/Python/CodeIndex/intermediate_stuff
+  git push github master
+```
 
 # Development 
 ## PEP8 Python Enhancement Proposal
