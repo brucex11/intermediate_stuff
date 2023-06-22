@@ -47,6 +47,8 @@ def main() -> int:
     com2 = a_class.Computer( 'Ryzin 3', 8 )
     com1.config()
     com2.config()
+    theCPU = com1.what_is_my_cpu()
+    print(f"My CPU is: {theCPU}")
 
 
 def _set_root_logger(

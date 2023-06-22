@@ -10,3 +10,6 @@ class Computer:
 
   def config(self):
     print(f'Config is: {self.cpu} {self.ram}' )
+  
+  def what_is_my_cpu(self):
+    return self.ram
